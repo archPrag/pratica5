@@ -1,0 +1,9 @@
+[Unit]
+Description= Blink LED
+After=multi-user.target
+[Service]
+user=sel
+ExecStart=/bin/python /home/sel/Desktop/pratica5/blink.py
+#ExecStop=
+[Install]
+WantedBy=multi-user.target
